@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tetris</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+	       audio{
+	       	margin-left: 50px;
+	       	margin-top:200px;
+	       }
+		body{
+			
+			color: black ;
+			font-family: sans-serif;
+			font-size: 2em;
+			text-align:center;
+		}
+		canvas{
+			border:solid .2em #494d4f;
+			
+		}
+		#instructions{
+			float: left;
+			border: solid 2px #fff;
+			padding: 10px;
+			margin-left: 20px;
+		}
+	</style>
+	
+</head>
+<body background="assets/image.jpg">
+
+
+<div id="scoreCard" style="color:#fff;"> </div>
+<div id="instructions" style="background: rgba(52, 55, 56, 0.64);color: black;"> <b><tt>Welcome to tetris Game..!!!<br>Instructions:<br>
+1.To move piece left:press <kbd>Left Arrow</kbd><br>2.To move piece right:press <kbd>Right Arrow</kbd><br>
+3.To move piece down:press <kbd>Down Arrow</kbd><br>4.To rotate Piece clockwise:<kbd>W</kbd><br>5.To rotate piece anticlockwise:</tt><kbd>Q</kbd></b></div>
+ <canvas id="tetris"  height="400" width="240"></canvas>
+
+<script src="tetris.js"></script>
+<audio controls loop="true" >
+  
+  <source src="assets/tetris.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</body>
+</html>
